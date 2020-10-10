@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { NumBtn } from './components/NumBtn';
 import { OperatorBtn } from './components/OperatorBtn';
-import { Clear } from './components/ClearBtn';
+import { ClearBtn } from './components/ClearBtn';
 import { Display } from './components/Display';
 import { BurgerMenu } from './components/BurgerMenu';
 
@@ -10,14 +10,14 @@ function App() {
   return (
     <div className="App">
       <div class="header">
-        <BurgerMenu></BurgerMenu>
+        <BurgerMenu>Menu</BurgerMenu>
       </div>
       <div class="display">
         <Display>Display</Display>
       </div>
       <div className="keypad">
         <div className="row">
-          <Clear>C</Clear>
+          <ClearBtn>C</ClearBtn>
           <div className="bank"></div>
           <OperatorBtn>/</OperatorBtn>
           <OperatorBtn>*</OperatorBtn>
