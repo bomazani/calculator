@@ -14,7 +14,21 @@
   display: flex;
   background-color: #5752a7;
   color: #b3b3e6;
+  height: 5em;
+  padding: 2em;
+}
+
+.calc-display {
+  display: flex;
   height: 10em;
+}
+
+.keyad {
+  display: flex;
+  flex-direction: row;
+  height: 50em;
+  padding: 4em;
+  border: 2px solid red;
 }
 
 .row {
@@ -22,5 +36,11 @@
   flex-direction: row;
   justify-content: space-evenly;
   background-color: #2d2d86;
+}
 
+.operaterpad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #2d2d86;
 }
