@@ -1,8 +1,8 @@
 import React from "react";
-import "./BurgerMenu.css"
+import "./BurgerMenu.css";
 
 const BurgerMenu = props => {
     <div className="burger-menu">
-        Burger-Menu
+        Menu
     </div>
 };
