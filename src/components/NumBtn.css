@@ -2,10 +2,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4em;
-    width: 4em;
+    height: 2.5em;
+    width: 2.5em;
+    margin: .1em;
+    font-size: 2em;
     background-color: #2d2d86;
     color: #b3b3e6;
     border: 2px solid #43437e;
+    border-radius: 50%;
+}
+
+.zero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 4em;
+    font-size: 2em;
+    margin: .1em;
+    background-color: #2d2d86;
+    color: #b3b3e6;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.blank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    background-color: #2d2d86;
+    color: #2d2d86;
+    border: 2px solid #2d2d86;
     border-radius: 50%;
 }
