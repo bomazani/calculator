@@ -2,4 +2,8 @@ import React from "react";
 import "./Display.css"
 
 
-export const Display = props => <div classname="display">{props.display}</div>;
+export const Display = props => (
+    <div className="display">
+        {props.display}
+    </div>
+);
