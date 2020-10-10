@@ -1,0 +1,11 @@
+.operator-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    width: 4em;
+    /* font-size: 1em; */
+    background-color: #fde24a;
+    color: #5752a7;
+    border-radius: 50%;
+}
