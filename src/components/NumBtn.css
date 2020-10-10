@@ -1,0 +1,11 @@
+.num-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    width: 4em;
+    background-color: #2d2d86;
+    color: #b3b3e6;
+    border: 2px solid #43437e;
+    border-radius: 50%;
+}
