@@ -1,5 +1,10 @@
 import React from 'react';
 import './App.css';
+import NumBtn from './components/NumBtn';
+import OperatorBtn from './components/OperatorBtn';
+import Clear from './components/ClearBtn';
+import Display from './components/Display';
+import Hamburger from './components/BurgerMenu';
 
 function App() {
   return (
