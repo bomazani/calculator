@@ -2,7 +2,7 @@ import React from "react";
 import "./OperatorBtn.css"
 
 const OperatorBtn = props => (
-  <div classname={operator-btn}>
+  <div classname="operator-btn">
     {props.children}
   </div>
 );

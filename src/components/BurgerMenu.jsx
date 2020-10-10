@@ -1,7 +1,8 @@
 import React from "react";
-import "./Hamburger.css"
+import "./BurgerMenu.css"
 
-
-export Hamburger = props => {
-    <div className="hamburger">Burger-Menu</div>
+const BurgerMenu = props => {
+    <div className="burger-menu">
+        Burger-Menu
+    </div>
 };
