@@ -1,14 +1,15 @@
 .app {
   display: flex;
-  height: 100vm;
+  height: 100vh;
+  width: 100%;
   background-color: #2d2d86;
 }
 
 .calc-wrapper {
   display: flex;
   flex-direction: column;
+  height:100%vh;
   width: 414px;
-  height:100%vm;
   background-color: #2d2d86;
 }
 
@@ -17,12 +18,12 @@
   flex-direction: column;
   background-color: #5752a7;
   color: #b3b3e6;
-  height: 100px;
+  height: 10%vh;
   width: 414px;
 }
 
 .calculator-display {
-  height: 200px;
+  height: 25vh;
   width: 414px;
   display: flex;
   justify-content: flex-end;
@@ -42,6 +43,7 @@
 .keypad {
   display: flex;
   flex-direction: row;
+  height: 55vh;
   border: 20px solid  #2d2d86;
 }
 
@@ -79,4 +81,12 @@
   display: flex;
   width:66%;
   object-fit: fill;
+}
+
+.footer {
+  display: flex;
+  background-color: #2d2d86;
+  height: 20vh;
+  width: 100%;
+
 }
