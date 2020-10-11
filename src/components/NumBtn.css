@@ -17,12 +17,12 @@
     align-items: center;
     justify-content: center;
     height: 2.5em;
-    width: 5em;
+    width: 66%;
     font-size: 2em;
     margin: .1em;
     background-color: #2d2d86;
     color: #b3b3e6;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 50%;
 }
 
