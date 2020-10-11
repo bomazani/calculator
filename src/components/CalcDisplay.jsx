@@ -4,6 +4,6 @@ import "./CalcDisplay.css"
 
 export const CalcDisplay = props => (
     <div className="calc-display">
-        {props.CalcDisplay}
+        {props.calcDisplay}
     </div>
 );

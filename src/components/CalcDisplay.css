@@ -1,5 +1,7 @@
 .calc-display {
     display: flex;
+    flex-direction: row;
     background-color: #2d2d86;
     color: #b3b3e6;
+    font-size: 2em;
 }
