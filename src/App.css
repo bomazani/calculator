@@ -1,13 +1,14 @@
 .app {
   display: flex;
-  height: 100%;
+  height: 100vm;
+  background-color: #2d2d86;
 }
 
 .calc-wrapper {
   display: flex;
   flex-direction: column;
   width: 414px;
-  height:846px;
+  height:100%vm;
   background-color: #2d2d86;
 }
 
@@ -68,7 +69,7 @@
 
 .equalbtn {
   display: flex;
-  object-fit: fill;
+  object-fit: stretch;
   height: 40%;
   width: 100%;
   justify-content: bottom;

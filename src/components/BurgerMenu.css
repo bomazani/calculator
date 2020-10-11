@@ -14,6 +14,7 @@
     flex-direction: column;
     height: 20px;
     width: 395px;
+    padding-left: 15px;
 }
 
 .menu-icon {
@@ -25,6 +26,7 @@
     flex-wrap: wrap;
     height: 100px;
     width: 395px;
+    padding-bottom: 15px;
     margin: 10px;
     align-items: flex-end;
     justify-content: flex-end;
