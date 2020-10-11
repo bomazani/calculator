@@ -18,18 +18,25 @@
   padding: 2em;
 }
 
-.calc-display {
+/* .calc-display {
   display: flex;
   height: 10em;
   width: 20em;
-}
+} */
 
 .keyad {
   display: flex;
   flex-direction: row;
   height: 50em;
-  padding: 4em;
+  width: 326;
+  /* padding: 8em; */
   border: 2px solid red;
+}
+
+.upper-pad {
+  display: flex;
+  flex-direction: column;
+  width: 326;
 }
 
 .row {
@@ -39,9 +46,20 @@
   background-color: #2d2d86;
 }
 
-.operaterpad {
+.lower-pad {
   display: flex;
+  flex-direction: row;
+  width: 326;
+
+}
+
+.left {
   flex-direction: column;
+}
+
+.lower-left {
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   background-color: #2d2d86;
 }
