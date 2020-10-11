@@ -1,6 +1,10 @@
 .calc-display {
+    height: 28%;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
+    /* flex-direction: row; */
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
     background-color: #2d2d86;
     color: #b3b3e6;
     font-size: 2em;
