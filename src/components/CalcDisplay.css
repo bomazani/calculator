@@ -1,11 +1,15 @@
 .calc-display {
-    height: 28%;
+    height: 200px;
+    width: 395px;
     display: flex;
     justify-content: flex-end;
-    /* flex-direction: row; */
     align-items: flex-end;
-    flex-wrap: wrap-reverse;
+    text-align: bottom;
+    flex-wrap: wrap;
     background-color: #2d2d86;
     color: #b3b3e6;
-    font-size: 2em;
+    font-size: 2.25em;
+    padding-bottom: 5px;
+    text-decoration: none;
+    overflow-wrap: break-word;
 }
