@@ -21,6 +21,7 @@
 .calc-display {
   display: flex;
   height: 10em;
+  width: 20em;
 }
 
 .keyad {
