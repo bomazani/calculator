@@ -60,79 +60,25 @@ class App extends Component {
             <CalcDisplay calcDisplay={this.state.calcDisplay} />
           </div>
 
-          {/* flexbox */}
-          {/* <div className="keypad">
-            <div className="numberpad">
-              <div className="row">
-                <ClearBtn handleClear={() => this.setState({calcDisplay: "0"})}>C</ClearBtn>
-                <div className="blank">?</div>
-                <OperatorBtn handleClick={this.addToCalcDisplay}>/</OperatorBtn>
-              </div>
-              <div className="row">
-                <NumBtn handleClick={this.addToCalcDisplay}>7</NumBtn>
-                <NumBtn handleClick={this.addToCalcDisplay}>8</NumBtn>
-                <NumBtn handleClick={this.addToCalcDisplay}>9</NumBtn>
-              </div>
-              <div className="row">
-                <NumBtn handleClick={this.addToCalcDisplay}>4</NumBtn>
-                <NumBtn handleClick={this.addToCalcDisplay}>5</NumBtn>
-                <NumBtn handleClick={this.addToCalcDisplay}>6</NumBtn>
-              </div>
-              <div className="row">
-                <NumBtn handleClick={this.addToCalcDisplay}>1</NumBtn>
-                <NumBtn handleClick={this.addToCalcDisplay}>2</NumBtn>
-                <NumBtn handleClick={this.addToCalcDisplay}>3</NumBtn>
-              </div>
-              <div className="row">
-                <NumBtn className="zero" handleClick={this.addToCalcDisplay}>0</NumBtn>
-                <NumBtn handleClick={this.addToCalcDisplay}>.</NumBtn>
-              </div>
-            </div>
-
-            <div className="operatorpad">
-              <div className="mult-minus-add-btns">
-                <OperatorBtn handleClick={this.addToCalcDisplay}>*</OperatorBtn>
-                <OperatorBtn handleClick={this.addToCalcDisplay}>-</OperatorBtn>
-                <OperatorBtn handleClick={this.addToCalcDisplay}>+</OperatorBtn>
-              </div>
-              <div className="equalbtn">
-                <EqualBtn handleClick={this.handleEqual}>=</EqualBtn>
-              </div>
-            </div>
-          </div> */}
-
-          {/* grid and flexbox */}
           <div className="keypad">
-              <div className="row-1">
                 <ClearBtn id="btn-clear" handleClear={() => this.setState({calcDisplay: "0"})}>C</ClearBtn>
-                {/* <div className="blank">?</div> */}
+                <div className="blank">?</div>
                 <OperatorBtn id="btn-divide" handleClick={this.addToCalcDisplay}>/</OperatorBtn>
                 <OperatorBtn id="btn-mult" handleClick={this.addToCalcDisplay}>*</OperatorBtn>
-              </div>
-              <div className="row-2">
                 <NumBtn id="btn-7" handleClick={this.addToCalcDisplay}>7</NumBtn>
                 <NumBtn id="btn-8" handleClick={this.addToCalcDisplay}>8</NumBtn>
                 <NumBtn id="btn-9" handleClick={this.addToCalcDisplay}>9</NumBtn>
                 <OperatorBtn id="btn-minus" handleClick={this.addToCalcDisplay}>-</OperatorBtn>
-              </div>
-              <div className="row-3">
                 <NumBtn id="btn-4" handleClick={this.addToCalcDisplay}>4</NumBtn>
                 <NumBtn id="btn-5" handleClick={this.addToCalcDisplay}>5</NumBtn>
                 <NumBtn id="btn-6" handleClick={this.addToCalcDisplay}>6</NumBtn>
                 <OperatorBtn id="btn-add" handleClick={this.addToCalcDisplay}>+</OperatorBtn>
-              </div>
-              <div className="row-4">
                 <NumBtn id="btn-1" handleClick={this.addToCalcDisplay}>1</NumBtn>
                 <NumBtn id="btn-2" handleClick={this.addToCalcDisplay}>2</NumBtn>
                 <NumBtn id="btn-3" handleClick={this.addToCalcDisplay}>3</NumBtn>
                 <EqualBtn id="btn-equal" handleClick={this.handleEqual}>=</EqualBtn>
-              </div>
-              <div className="row-5">
                 <NumBtn className="zero" id="btn-0" className="zero" handleClick={this.addToCalcDisplay}>0</NumBtn>
                 <NumBtn id="btn-decimal" handleClick={this.addToCalcDisplay}>.</NumBtn>
-              </div>
-
-
           </div>
 
           <div className="footer"></div>
