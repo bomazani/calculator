@@ -44,68 +44,68 @@ class App extends Component {
     this.setState({history: this.state.history.concat(tempArray)});
   }
 
-render() { 
-  return (
-    <div className="App">
-      <div className="calc-wrapper">
+  render() { 
+    return (
+      <div className="App">
+        <div className="calc-wrapper">
 
 
-        <div className="header">
-          {/* <BurgerMenu>Menu</BurgerMenu> */}
-          <BurgerMenu>{this.state.history}</BurgerMenu>
-        </div>
-
-
-        <div className="calculator-display">
-          <CalcDisplay calcDisplay={this.state.calcDisplay} />
-        </div>
-
-
-        <div className="keypad">
-          <div className="numberpad">
-            <div className="row">
-              <ClearBtn handleClear={() => this.setState({calcDisplay: "0"})}>C</ClearBtn>
-              <div className="blank">?</div>
-              <OperatorBtn handleClick={this.addToCalcDisplay}>/</OperatorBtn>
-            </div>
-            <div className="row">
-              <NumBtn handleClick={this.addToCalcDisplay}>7</NumBtn>
-              <NumBtn handleClick={this.addToCalcDisplay}>8</NumBtn>
-              <NumBtn handleClick={this.addToCalcDisplay}>9</NumBtn>
-            </div>
-            <div className="row">
-              <NumBtn handleClick={this.addToCalcDisplay}>4</NumBtn>
-              <NumBtn handleClick={this.addToCalcDisplay}>5</NumBtn>
-              <NumBtn handleClick={this.addToCalcDisplay}>6</NumBtn>
-            </div>
-            <div className="row">
-              <NumBtn handleClick={this.addToCalcDisplay}>1</NumBtn>
-              <NumBtn handleClick={this.addToCalcDisplay}>2</NumBtn>
-              <NumBtn handleClick={this.addToCalcDisplay}>3</NumBtn>
-            </div>
-            <div className="row">
-              <NumBtn className="zero" handleClick={this.addToCalcDisplay}>0</NumBtn>
-              <NumBtn handleClick={this.addToCalcDisplay}>.</NumBtn>
-            </div>
+          <div className="header">
+            {/* <BurgerMenu>Menu</BurgerMenu> */}
+            <BurgerMenu>{this.state.history}</BurgerMenu>
           </div>
 
-          <div className="operatorpad">
-            <div className="mult-minus-add-btns">
-              <OperatorBtn handleClick={this.addToCalcDisplay}>*</OperatorBtn>
-              <OperatorBtn handleClick={this.addToCalcDisplay}>-</OperatorBtn>
-              <OperatorBtn handleClick={this.addToCalcDisplay}>+</OperatorBtn>
-            </div>
-            <div className="equalbtn">
-              <EqualBtn handleClick={this.handleEqual}>=</EqualBtn>
-            </div>
+
+          <div className="calculator-display">
+            <CalcDisplay calcDisplay={this.state.calcDisplay} />
           </div>
 
+
+          <div className="keypad">
+            <div className="numberpad">
+              <div className="row">
+                <ClearBtn handleClear={() => this.setState({calcDisplay: "0"})}>C</ClearBtn>
+                <div className="blank">?</div>
+                <OperatorBtn handleClick={this.addToCalcDisplay}>/</OperatorBtn>
+              </div>
+              <div className="row">
+                <NumBtn handleClick={this.addToCalcDisplay}>7</NumBtn>
+                <NumBtn handleClick={this.addToCalcDisplay}>8</NumBtn>
+                <NumBtn handleClick={this.addToCalcDisplay}>9</NumBtn>
+              </div>
+              <div className="row">
+                <NumBtn handleClick={this.addToCalcDisplay}>4</NumBtn>
+                <NumBtn handleClick={this.addToCalcDisplay}>5</NumBtn>
+                <NumBtn handleClick={this.addToCalcDisplay}>6</NumBtn>
+              </div>
+              <div className="row">
+                <NumBtn handleClick={this.addToCalcDisplay}>1</NumBtn>
+                <NumBtn handleClick={this.addToCalcDisplay}>2</NumBtn>
+                <NumBtn handleClick={this.addToCalcDisplay}>3</NumBtn>
+              </div>
+              <div className="row">
+                <NumBtn className="zero" handleClick={this.addToCalcDisplay}>0</NumBtn>
+                <NumBtn handleClick={this.addToCalcDisplay}>.</NumBtn>
+              </div>
+            </div>
+
+            <div className="operatorpad">
+              <div className="mult-minus-add-btns">
+                <OperatorBtn handleClick={this.addToCalcDisplay}>*</OperatorBtn>
+                <OperatorBtn handleClick={this.addToCalcDisplay}>-</OperatorBtn>
+                <OperatorBtn handleClick={this.addToCalcDisplay}>+</OperatorBtn>
+              </div>
+              <div className="equalbtn">
+                <EqualBtn handleClick={this.handleEqual}>=</EqualBtn>
+              </div>
+            </div>
+
+          </div>
+          <div className="footer"></div>
         </div>
-        <div className="footer"></div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 }
 
 export default App
