@@ -119,10 +119,12 @@
 
 #btn-equal {
   grid-area: btn-equal;
+  object-fit: fit;
 }
 
 #btn-0 {
   grid-area: btn-0;
+  object-fit: fit;
 }
 
 #btn-decimal {
