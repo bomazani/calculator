@@ -47,17 +47,17 @@ class App extends Component {
   render() { 
     return (
       <div className="App">
-        <div className="calc-wrapper">
+        <div className="calc-wrapper" id="calc-grid">
 
 
-          <div className="header">
+          <div className="header" id="header-grid">
             {/* <BurgerMenu>Menu</BurgerMenu> */}
             <BurgerMenu>{this.state.history}</BurgerMenu>
           </div>
 
 
 
-          <div className="calculator-display">
+          <div className="calculator-display" id="display-grid">
             <CalcDisplay calcDisplay={this.state.calcDisplay} />
           </div>
 
@@ -92,7 +92,7 @@ class App extends Component {
               {/* </div> */}
             </div>
 
-          <div className="footer"></div>
+          <div className="footer" id="footer-grid"></div>
         </div>
       </div>
     );
