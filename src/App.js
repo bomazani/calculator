@@ -6,6 +6,7 @@ import { ClearBtn } from './components/ClearBtn';
 import { CalcDisplay } from './components/CalcDisplay';
 import { BurgerMenu } from './components/BurgerMenu';
 import { EqualBtn } from './components/EqualBtn';
+import { ZeroBtn } from './components/ZeroBtn';
 
 import { evaluate } from 'mathjs';
 // import { arraySize } from 'mathjs/es/utils/array';
@@ -57,7 +58,7 @@ class App extends Component {
 
 
 
-          <div className="calculator-display" id="display-grid">
+          <div className="calculator-display" id="disp-grid">
             <CalcDisplay calcDisplay={this.state.calcDisplay} />
           </div>
 
@@ -87,7 +88,7 @@ class App extends Component {
                 <EqualBtn id="btn-equal" handleClick={this.handleEqual}>=</EqualBtn>
               {/* </div> */}
               {/* <div className="row-5"> */}
-                <NumBtn className="zero" id="btn-0" className="zero" handleClick={this.addToCalcDisplay}>0</NumBtn>
+                <ZeroBtn id="btn-0" handleClick={this.addToCalcDisplay}>0</ZeroBtn>
                 <NumBtn id="btn-decimal" handleClick={this.addToCalcDisplay}>.</NumBtn>
               {/* </div> */}
             </div>
