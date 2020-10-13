@@ -1,42 +1,24 @@
 .app {
-  display: flex;
+  display: grid;
   height: 100vh;
+  width: 100%;
+  background-color: #2d2d86;
+  grid-template-rows: 1fr;
+}
+
+.calc-wrapper {
+  /* display: flex; */
+  display: grid;
+  flex-direction: column;
+  grid-template-rows: .75fr 1.25fr 2.5fr 1fr;
+  height:100vh;
+  /* width: 414px; */
   width: 100%;
   background-color: #2d2d86;
 }
 
-.calc-wrapper {
-  display: flex;
-  flex-direction: column;
-  grid-template-rows: .75fr 1.25fr 2.5fr 1fr;
-
-  height:100%vh;
-  width: 414px;
-  background-color: #2d2d86;
-}
-
-#calc-grid {
+/* #calc-grid {
   display: grid;
-
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  background-color: #5752a7;
-  color: #b3b3e6;
-  height: 10%vh;
-  width: 414px;
-}
-
-#header-grid {
-  display: grid;
-}
-
-.calculator-display {
-  height: 25vh;
-  width: 414px;
-  display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   text-align: bottom;
@@ -48,10 +30,67 @@
   padding-right:2px;
   text-decoration: none;
   overflow-wrap: break-word;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: stretch;
+  align-self: stretch;
+  align-content: stretch;
+  object-fit: fit;
+} */
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #5752a7;
+  color: #b3b3e6;
+  /* height: 10%vh; */
+  /* width: 414px; */
+  width: 100%;
 }
 
-#calc-grid {
+#header-grid {
   display: grid;
+}
+
+.calculator-display {
+  /* height: 25vh; */
+  /* width: 414px; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: bottom;
+  flex-wrap: wrap;
+  background-color: #2d2d86;
+  color: #b3b3e6;
+  font-size: 2.25em;
+  border-bottom: 2px solid #b3b3e6;
+  /* padding-right:2px; */
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+#disp-grid {
+  display: grid;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+  /* text-align: bottom; */
+  /* flex-wrap: wrap; */
+  /* background-color: #2d2d86; */
+  /* color: #b3b3e6; */
+  /* font-size: 2.25em; */
+  /* border-bottom: 2px solid #b3b3e6; */
+  /* padding-right:2px; */
+  /* text-decoration: none; */
+  /* overflow-wrap: break-word; */
+  /* gap: 10px; */
+  align-items: stretch;
+  justify-content: stretch;
+  align-self: stretch;
+  align-content: stretch;
+  object-fit: fit;
 }
 
 .keypad {
@@ -65,7 +104,13 @@
     "btn-4 btn-5 btn-6 btn-add"
     "btn-1 btn-2 btn-3 btn-equal"
     "btn-0 btn-0 btn-decimal btn-equal";
-  /* gap: 1px; */
+  gap: 10px;
+  align-items: stretch;
+  justify-content: stretch;
+  align-self: stretch;
+  align-content: stretch;
+
+  object-fit: fit;
 }
 
 #btn-clear {
@@ -126,45 +171,53 @@
 
 #btn-equal {
   grid-area: btn-equal;
-  object-fit: fit;
+  object-fit: fill;
+  align-self: stretch;
+  height: auto;
+  width: auto;
+  justify-self: flex-end;
+  align-items: stretch;
+  justify-content: stretch;
+  align-self: stretch;
+  align-content: stretch;
 }
 
 #btn-0 {
   grid-area: btn-0;
-  object-fit: fit;
+  object-fit: fill;
+  align-self: stretch;
+  height: auto;
+  width: auto;
+  justify-self: flex-end;
+  align-items: stretch;
+  justify-content: stretch;
+  align-self: stretch;
+  align-content: stretch;  
 }
 
 #btn-decimal {
   grid-area: btn-decimal;
 }
 
-
-/* .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: #2d2d86;
-} */
-
 .equalbtn {
-  display: flex;
-  object-fit: stretch;
-  height: 40%;
-  width: 100%;
-  justify-content: bottom;
-  object-fit: fill;
+  grid-area: btn-equal;
+  height: auto;
+  width: auto;
 }
 
 .zero {
-  display: flex;
-  width:66%;
-  object-fit: fill;
+  grid-area: btn-0;
+  height: auto;
+  width: auto;
 }
 
 .footer {
   display: flex;
   background-color: #2d2d86;
-  height: 20vh;
-  width: 100%;
+  /* height: 20vh; */
+  width: 100%
+}
 
+#footer-grid {
+  display: grid;
 }

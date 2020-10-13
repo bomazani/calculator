@@ -1,14 +1,12 @@
-.equal-btn {
+.zero-btn {
     display: grid;
-    grid-area: btn-equal;
+    grid-area: btn-0;
     align-items: center;
     justify-content: center;
-    /* height: 100%; */
-    /* width: 3em; */
-    /* margin: 5px; */
     font-size: 1.5em;
     background-color: #fde24a;
     color: #5752a7;
     border-radius: 35px;
     object-fit: fill;
+    
 }
