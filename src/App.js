@@ -48,21 +48,21 @@ class App extends Component {
   render() { 
     return (
       <div className="App">
-        <div className="calc-wrapper" id="calc-grid">
-
+        <fragment className="canvas">
 
           <div className="header" id="header-grid">
             {/* <BurgerMenu>Menu</BurgerMenu> */}
             <BurgerMenu>{this.state.history}</BurgerMenu>
           </div>
 
+          <div className="calc-border-left"></div>
+          <div className="calc-wrapper" id="calc-grid">
 
+            <div className="calculator-display" id="display-grid">
+              <CalcDisplay calcDisplay={this.state.calcDisplay} />
+            </div>
 
-          <div className="calculator-display" id="disp-grid">
-            <CalcDisplay calcDisplay={this.state.calcDisplay} />
-          </div>
-
-          <div className="keypad">
+            <div className="keypad">
               {/* <div className="row-1"> */}
                 <ClearBtn id="btn-clear" handleClear={() => this.setState({calcDisplay: "0"})}>C</ClearBtn>
                 <div className="blank">?</div>
@@ -93,8 +93,11 @@ class App extends Component {
               {/* </div> */}
             </div>
 
+          </div>
+          <div className="calc-border-right"></div>
           <div className="footer" id="footer-grid"></div>
-        </div>
+
+        </fragment>
       </div>
     );
   };
