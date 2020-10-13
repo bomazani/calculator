@@ -4,8 +4,9 @@
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
-    background-color: #fde24a;
-    color: #5752a7;
+    background-color: #2d2d86;
+    color: #b3b3e6;
+    border: 2px solid #43437e;
     border-radius: 35px;
     object-fit: fill;
     
