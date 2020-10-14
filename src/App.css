@@ -22,13 +22,15 @@
 .calc-border-left {
   display: grid;
   grid-area: calc-border-left;
-  background-color: red;
+  /* background-color: red; */
+  background-color: #2d2d86;
 }
 
 .calc-border-right {
   display: grid;
   grid-area: calc-border-right;
-  background-color: red;
+  /* background-color: red; */
+  background-color: #2d2d86;
 }
 
 .calc-wrapper {

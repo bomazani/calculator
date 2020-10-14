@@ -4,7 +4,7 @@ import { NumBtn } from './components/NumBtn';
 import { OperatorBtn } from './components/OperatorBtn';
 import { ClearBtn } from './components/ClearBtn';
 import { CalcDisplay } from './components/CalcDisplay';
-import { BurgerMenu } from './components/BurgerMenu';
+import { BurgerMenu } from './components/hamburger-menu/BurgerMenu';
 import { EqualBtn } from './components/EqualBtn';
 import { ZeroBtn } from './components/ZeroBtn';
 
