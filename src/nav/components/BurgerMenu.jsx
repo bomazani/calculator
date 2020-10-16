@@ -1,14 +1,13 @@
 import React from "react";
 import "./BurgerMenu.css";
 
-import React, { Component } from 'react';
-import './BurgerMenu.css';
+// import React, { Component } from 'react';
+// import './BurgerMenu.css';
 
-const Nav = styled.nav`
-`
+// const Nav = styled.nav``
 
 
-const Navbar = () => {
+export const BurgerMenu = () => {
     return (
         <div>
             <div className="logo">
@@ -22,6 +21,7 @@ const Navbar = () => {
     )
 }
 
+export default BurgerMenu
 // export const BurgerMenu = props => (
 //     <div className="burger-menu">
 //         <div className="burger-icon">
